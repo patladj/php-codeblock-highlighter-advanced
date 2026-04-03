@@ -49,11 +49,11 @@ PatlaDJ: To make sure the plugin is indeed Production-grade, I've taken care of 
 *   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `npm install` (only if not already done)
 *   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `npm install -g @vscode/vsce` (only if not already done)
 *   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `vsce package` (that's the only thing you need to do between the rebuild cycles)
-* ... this creates file 'php-codeblock-highlighter-advanced-x.x.x.vsix' in the root-dir ...
+* ... this creates file `php-codeblock-highlighter-advanced-x.x.x.vsix` in the root-dir ...
 
-Import the file 'C:\MyWork\git_repos\php-codeblock-highlighter-advanced\php-codeblock-highlighter-advanced-x.x.x.vsix' into VSCode by:
+Import the file `C:\MyWork\git_repos\php-codeblock-highlighter-advanced\php-codeblock-highlighter-advanced-x.x.x.vsix` into VSCode by:
 
-1. first removing the old extension, if any (Ctrl + Shift + X  -> "Manage" the extension menu -> Uninstall), restart VSCode completely,
+1. first removing the old extension (if any). (Ctrl + Shift + X  -> "Manage" the extension menu -> Uninstall), restart VSCode completely,
 2. then reimporting it again by (Ctrl + Shift + X  -> Click on the three-dots on the up-right -> Install from VSIX)
 3. finally: test it on some PHP project (a .php file has to be opened)
 
