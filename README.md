@@ -6,7 +6,7 @@ A high-performance, precision visual aid for VS Code that perfectly separates HT
 
 **Open Source Project:** PatlaDJ: You can always build it yourself. Full source code at: [php-codeblock-highlighter-advanced](https://github.com/patladj/php-codeblock-highlighter-advanced.git). Very-easy build instruction with `npm`. See below.
 
-![php codeblock highlighter advanced edition screenshot](https://github.com/patladj/php-codeblock-highlighter-advanced/blob/main/media/php-codeblock-highlighter-advanced-edition.png)
+![php codeblock highlighter advanced edition screenshot](https://raw.githubusercontent.com/patladj/php-codeblock-highlighter-advanced/refs/heads/main/media/php-codeblock-highlighter-advanced-edition.png)
 
 ## The Problem
 PatlaDJ: Working with legacy PHP files (where complex PHP logic is heavily intertwined with HTML templates) is visually exhausting. The standard VSCode syntax highlighting, unfortunately isn't enough to separate the structural logic from the front-end skeleton, making it easy to lose your place.
