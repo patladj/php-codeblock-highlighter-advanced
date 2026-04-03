@@ -3,6 +3,7 @@
 A high-performance, precision visual aid for VS Code that perfectly separates HTML and PHP code in mixed legacy files.
 
 **Co-Authored By:** PatlaDJ and Gemini 3.1 Pro (AI)
+
 **Open Source Project:** PatlaDJ: You can always build it yourself. Full source code at: [php-codeblock-highlighter-advanced](https://github.com/patladj/php-codeblock-highlighter-advanced.git). Very-easy build instruction with npm. See below.
 
 ![php codeblock highlighter advanced edition screenshot](media/php-codeblock-highlighter-advanced-edition.png)
