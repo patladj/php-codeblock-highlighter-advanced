@@ -3,6 +3,9 @@
 A high-performance, precision visual aid for VS Code that perfectly separates HTML and PHP code in mixed legacy files.
 
 **Co-Authored By:** PatlaDJ and Gemini 3.1 Pro (AI)
+**Open Source Project:** PatlaDJ: You can always build it yourself. Full source code at: [php-codeblock-highlighter-advanced](https://github.com/patladj/php-codeblock-highlighter-advanced.git). Very-easy build instruction with npm. See below.
+
+![php codeblock highlighter advanced edition screenshot](media/php-codeblock-highlighter-advanced-edition.png)
 
 ## The Problem
 PatlaDJ: Working with legacy PHP files (where complex PHP logic is heavily intertwined with HTML templates) is visually exhausting. The standard VSCode syntax highlighting, unfortunately isn't enough to separate the structural logic from the front-end skeleton, making it easy to lose your place.
@@ -12,7 +15,7 @@ Gemini 3.1 Pro and PatlaDJ: This extension acts as a visual structuralizer. It p
 
 **Key Features:**
 * **Perfect Visual Hierarchy:** PatlaDJ: HTML gets a distinguishable background color; pure PHP logic remains natively dark and uncluttered (note: it has been tested on dark themes only, but you may tweak it for a light theme also, only by manipulating the Extension Settings).
-* **Inline Echo Isolation:** PatlaDJ: Template-placeholder-like echo statements stuffed inside HTML attributes (e.g., `<input value="<?php echo $var; ?>">` or `<input value="<?=$var?>">`) are automatically detected and wrapped in a customizable border for instant visual recognition.
+* **Inline Echo Isolation:** PatlaDJ: Template-placeholder-like echo statements stuffed inside HTML attributes (e.g., `<input value="<?php echo $var; ?>">` or `<input value="<?=$var?>">`) are automatically detected and wrapped in a customizable border for instant visual recognition in the code.
 * **Bulletproof Lexical Parser:** Gemini 3.1 Pro: Built with a custom, character-exact state machine. It perfectly handles nested PHP, strings, block comments, and inline comments without visual bleed.
 * **Flawless Native Integration:** Gemini 3.1 Pro: We bypassed VS Code's rendering limitations by building a cached "Fake Selection" layer. Text selection, cursor dragging, and native Search Highlights work perfectly without UI lag.
 * **Toggling:** The highlighter can be temporary disabled/re-enabled simply by clicking on the "Pizza" button on the status bar (down-right side of your screen). This feature has been taken from the original [php-codeblock-highlighter](https://github.com/emveeoh/php-codeblock-highlighter.git) authored by `emveeoh`
@@ -38,15 +41,18 @@ Gemini 3.1 Pro: To prevent locking VS Code's Extension Host thread on large lega
 
 PatlaDJ: To make sure the plugin is indeed Production-grade, I've taken care of the exhaustive repetitive loop of "changing and testing". If you decide to perform changes on the extension, and you want to create a PR, I ask you to do the same, beforehand, coz probably I will not have time to do it for you. AI should be able to assimilate the codebase easily, and make modifications on it, as it is small, and there are good comments. Please keep the good comments!
 
-## How to re-build and test it with VSCode:
+## How to re-build from source, and test it with VSCode:
 
-* C:\MyWork\git_repos\php-codeblock-highlighter-advanced> npm install -g @vscode/vsce (only if not already done)
-* C:\MyWork\git_repos\php-codeblock-highlighter-advanced> vsce package
+* Clone the project from `https://github.com/patladj/php-codeblock-highlighter-advanced.git`
+* Go to dir, assuming `C:\MyWork\git_repos\php-codeblock-highlighter-advanced` is where you've clonned it locally, follow the below commands:
+*   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `npm install` (only if not already done)
+*   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `npm install -g @vscode/vsce` (only if not already done)
+*   C:\MyWork\git_repos\php-codeblock-highlighter-advanced> `vsce package` (that's the only thing you need to do between the rebuild cycles)
 * ... this creates file 'php-codeblock-highlighter-advanced-x.x.x.vsix' in the root-dir ...
 
 Import the file 'C:\MyWork\git_repos\php-codeblock-highlighter-advanced\php-codeblock-highlighter-advanced-x.x.x.vsix' into VSCode by:
 
-1. first removing the old extension (Ctrl + Shift + X  -> "Manage" the extension menu -> Uninstall), restart VSCode completely,
+1. first removing the old extension, if any (Ctrl + Shift + X  -> "Manage" the extension menu -> Uninstall), restart VSCode completely,
 2. then reimporting it again by (Ctrl + Shift + X  -> Click on the three-dots on the up-right -> Install from VSIX)
 3. finally: test it on some PHP project (a .php file has to be opened)
 
