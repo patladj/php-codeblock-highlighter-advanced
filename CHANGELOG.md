@@ -1,0 +1,7 @@
+# CHANGELOG
+
+## [1.0.0] - 2026-04-02
+
+### Added
+
+- Initial major release.

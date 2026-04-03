@@ -1,0 +1,96 @@
+{
+  "name": "php-codeblock-highlighter-advanced",
+  "displayName": "PHP Codeblock Highlighter (advanced)",
+  "description": "",
+  "version": "1.0.0",
+  "publisher": "PatlaDJ and Gemini 3.1 Pro (AI)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patladj/php-codeblock-highlighter-advanced.git"
+  },
+  "keywords": [
+    "php",
+    "highlight",
+    "codeblock"
+  ],
+  "engines": {
+    "vscode": "^1.109.5"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:php"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "php-codeblock-highlighter-advanced.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "configuration": {
+      "title": "PHP Codeblock Highlighter - Advanced Edition",
+      "properties": {
+        "pchAdvanced.backgroundColor": {
+          "type": "string",
+          "default": "rgba(255, 128, 128, 0.045)",
+          "description": "Background color for HTML (static) code blocks in rgba() format only."
+        },
+        "pchAdvanced.echoBorderColor": {
+          "type": "string",
+          "default": "rgba(255, 170, 0, 0.6)",
+          "description": "Border color for inline PHP echo statements (e.g. <?= $var ?>) when mixed with HTML."
+        },
+        "pchAdvanced.echoBorderStyle": {
+          "type": "string",
+          "default": "ridge",
+          "description": "The CSS border style for inline PHP echo statements (e.g., solid, dashed, inset)."
+        },
+        "pchAdvanced.echoBorderWidth": {
+          "type": "string",
+          "default": "2px",
+          "description": "The CSS border width for inline PHP echo statements (e.g., 1px, 2px)."
+        },
+        "pchAdvanced.echoBorderRadius": {
+          "type": "string",
+          "default": "10px",
+          "description": "The CSS border radius for rounding the edges of inline PHP echo statements."
+        },
+        "pchAdvanced.echoBackgroundColor": {
+          "type": "string",
+          "default": "transparent",
+          "description": "Background color for inline echoes. Default is transparent to inherit the HTML line color."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
