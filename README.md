@@ -11,7 +11,7 @@ PatlaDJ: Working with legacy PHP files (where complex PHP logic is heavily inter
 Gemini 3.1 Pro and PatlaDJ: This extension acts as a visual structuralizer. It paints beautiful, configurable, full-width background blocks across your HTML lines, while perfectly isolating and protecting your PHP logic. In addition, it also especially-highlights the '<?= ?>' and '<?php echo ; ?>' statements, so you can see where there are in the HTML/CSS/JSS code - right away!
 
 **Key Features:**
-* **Perfect Visual Hierarchy:** PatlaDJ: HTML gets a distinguishable background color; pure PHP logic remains natively dark and uncluttered.
+* **Perfect Visual Hierarchy:** PatlaDJ: HTML gets a distinguishable background color; pure PHP logic remains natively dark and uncluttered (note: it has been tested on dark themes only, but you may tweak it for a light theme also, only by manipulating the Extension Settings).
 * **Inline Echo Isolation:** PatlaDJ: Template-placeholder-like echo statements stuffed inside HTML attributes (e.g., `<input value="<?php echo $var; ?>">` or `<input value="<?=$var?>">`) are automatically detected and wrapped in a customizable border for instant visual recognition.
 * **Bulletproof Lexical Parser:** Gemini 3.1 Pro: Built with a custom, character-exact state machine. It perfectly handles nested PHP, strings, block comments, and inline comments without visual bleed.
 * **Flawless Native Integration:** Gemini 3.1 Pro: We bypassed VS Code's rendering limitations by building a cached "Fake Selection" layer. Text selection, cursor dragging, and native Search Highlights work perfectly without UI lag.
