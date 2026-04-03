@@ -15,6 +15,7 @@ Gemini 3.1 Pro and PatlaDJ: This extension acts as a visual structuralizer. It p
 * **Inline Echo Isolation:** PatlaDJ: Template-placeholder-like echo statements stuffed inside HTML attributes (e.g., `<input value="<?php echo $var; ?>">` or `<input value="<?=$var?>">`) are automatically detected and wrapped in a customizable border for instant visual recognition.
 * **Bulletproof Lexical Parser:** Gemini 3.1 Pro: Built with a custom, character-exact state machine. It perfectly handles nested PHP, strings, block comments, and inline comments without visual bleed.
 * **Flawless Native Integration:** Gemini 3.1 Pro: We bypassed VS Code's rendering limitations by building a cached "Fake Selection" layer. Text selection, cursor dragging, and native Search Highlights work perfectly without UI lag.
+* **Toggling:** The highlighter can be temporary disabled/re-enabled simply by clicking on the "Pizza" button on the status bar (down-right side of your screen). This feature has been taken from the original [php-codeblock-highlighter](https://github.com/emveeoh/php-codeblock-highlighter.git) authored by `emveeoh`
 
 ## Extension Settings
 
