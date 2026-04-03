@@ -1,7 +1,7 @@
 {
   "name": "php-codeblock-highlighter-advanced",
   "displayName": "PHP Codeblock Highlighter (advanced)",
-  "description": "",
+  "description": "When you have mixed PHP and static-HTML/CSS/JS code in a single .php file, it adds special highlighting for PHP and HTML code blocks",
   "version": "1.0.0",
   "publisher": "PatlaDJandGemini31ProAI",
   "repository": {
